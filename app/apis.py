@@ -40,7 +40,7 @@ app = FastAPI()
 # -------------------------------- Classification Model ------------------------------------
 
 # Load idx_to_name
-idx_to_name = pickle.load(open('idx_to_name.pkl', 'rb'))
+idx_to_name = pickle.load(open('utils/idx_to_name.pkl', 'rb'))
 
 # Classification Model
 class EfficientNetModel(nn.Module):
